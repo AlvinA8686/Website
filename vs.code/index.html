@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | CS Student</title>
+    <title>Alvin Amin | CS Student</title>
     <link rel="icon" type="image/png" href="tab_picture.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,7 +15,13 @@
             <div class="logo">AAA</div>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="#finProg">Finished Projects</a></li>
+                        <li><a href="ongProg">Ongoing Projects</a></li>
+                    </ul>
+                </li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -25,7 +31,15 @@
     <main>
         <section id="hero">
             <div class="hero-text">
-                <h1>Hi, I'm <span class="highlight">Alvin</span>.</h1>
+                <h1>
+                    Hi, I'm&nbsp;  
+                    <span>
+                        <span class="highlight"> Alvin</span>
+                        <span class="highlight"> a programmer</span>
+                        <span class="highlight"> a developer</span>
+                        <span class="highlight"> a designer</span>
+                    </span>
+                .</h1>
                 <img src="test.png" alt="me" width="200" height="200">
                 <p id="subtitle"></p>
             </div>
@@ -38,34 +52,49 @@
             </p>
         </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
+
+        <section id="ongProg">
+            <h2>Ongoing Projects</h2>
+            <h3 style="text-align: center; padding-bottom: 15px;" > Here are some projects that I am currently working on/will work on soon</h3>
+            
             <div class="project-container">
                 <div class="project-card">
-                    <h3>Project Title One</h3>
-                    <p>This Java Swing financial tracker lets you manage your money by logging expenses, setting budgets, and visualizing
-                    spending with dynamic bar charts.The app also features a stock tracker using the Polygon.io API and an AI assistant
-                    powered by Google's Gemini API for financial questions. It’s a comprehensive tool for understanding your finances.</p>
+                    <h3>Crypto/Stock trading bot</h3>
+                    <p> 
+                        I will create a cryto/stock trading bot that uses various technical indicators to make buy and sell decisions.
+                        The bot will be able to trade on multiple exchanges and will be able to handle multiple assets.(CURRENTLY TESTING USING PAPER/FAKE TRADING) 
+                    </p>
                     <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">Source Code</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="finProg">
+            <h2>Finished Projects</h2>
+            
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Stock and finances tracker</h3>
+                    <p> 
+                        This Java Swing financial tracker lets you manage your money by logging expenses, setting budgets, and visualizing
+                        spending with dynamic bar charts.The app also features a stock tracker using the Polygon.io API and an AI assistant
+                        powered by Google's Gemini API for financial questions. It's a comprehensive tool for understanding your finances.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AlvinA8686/Finance-App" target="_blank">Source Code</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3>Project Title Two</h3>
-                    <p>A brief description of your project. Talk about the technology stack used, the problem it solves, and your role in the project.</p>
+                    <h3>Roblox games</h3>
+                    <p>
+                        On Roblox I have created simple games like obbys and fighting games using the roblox scripting language luau. 
+                        This helped strengthen my understanding of object oriented programming by giving me a visual understanding of 
+                        my code when I created parts and used scripts in them
+                    </p>
                     <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Project Title Three</h3>
-                    <p>A brief description of your project. Talk about the technology stack used, the problem it solves, and your role in the project.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">Source Code</a>
                     </div>
                 </div>
             </div>
